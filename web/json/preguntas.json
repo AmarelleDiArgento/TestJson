@@ -1,0 +1,22 @@
+ [
+
+      {
+        "Id": 1,
+        "Pregunta": "Pregunta numero 1",
+        "Resp1": "res bla bla bla 1",
+        "Resp2": "res bla bla bla 2",
+        "Resp3": "res bla bla bla 3",
+        "Resp4": "res bla bla bla 4",
+        "Correcta": 1
+      },
+
+      {
+        "Id": 2,
+        "Pregunta": "Pregunta numero 2",
+        "Resp1": "res bla bla bla 1",
+        "Resp2": "res bla bla bla 2",
+        "Resp3": "res bla bla bla 3",
+        "Resp4": "res bla bla bla 4",
+        "Correcta": 3
+      }
+   ]
