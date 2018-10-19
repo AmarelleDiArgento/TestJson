@@ -1,39 +1,58 @@
-<!DOCTYPE html>
-<html lang="en">
+  <!DOCTYPE html>
+  <html lang="en">
 
-<head>
+
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="ie-edge">
   <title>Pruebas Vilma</title>
 
+
+  <!--  Scripts-->
+  <script src="js/Scripts/jquery-2.1.1.min.js"></script>
+  <script src="js/Scripts/SweetAlert.min.js"></script>
+  <script src="js/Scripts/materialize.js"></script>
+  <script src="js/Scripts/init.js"></script>
+  <script src="js/SweetUser.js"></script>
+  <script src="js/Ajax.js"></script>
+
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
-</head>
 
-<body>
-  <button type="button" class="btn" id="ejecutar" name="button">Click!</button>
-  <div class="content">
+  <div id="circulo" class="container">
     <section>
-      <div class="row">
-        <p id="pr" class="col s12 center"></p>
-        <button type="button" class="col s6 m6 l3 blue darken-4 text-white btn waves-effect waves-light" id="rp1" name="button"></button>
-        <button type="button" class="col s6 m6 l3 blue darken-4 text-white btn waves-effect waves-light" id="rp2" name="button"></button>
-        <button type="button" class="col s6 m6 l3 blue darken-4 text-white btn waves-effect waves-light" id="rp3" name="button"></button>
-        <button type="button" class="col s6 m6 l3 blue darken-4 text-white btn waves-effect waves-light" id="rp4" name="button"></button>
-
+      <div class="center blue-text">
+        <h1>Bienvenido!</h1>
+        <div class="preloader-wrapper big active">
+          <div class="spinner-layer spinner-blue-only">
+            <div class="circle-clipper left">
+              <div class="circle"></div>
+            </div>
+            <div class="gap-patch">
+              <div class="circle"></div>
+            </div>
+            <div class="circle-clipper right">
+              <div class="circle"></div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-
   </div>
-  <!--  Scripts-->
-  <script src="Js/jquery-2.1.1.min.js"></script>
-  <script src="Js/Ajax.js"></script>
-  <script src="Js/materialize.js"></script>
-  <script src="Js/init.js"></script>
 
-</body>
+  <div id="contenido" class="hide">
+    <section>
 
-</html>
+      <body>
+        <button type="button" class="btn" id="ejecutar" name="button">Click!</button>
+        <div class="row" id="botCamp">
+
+        </div>
+    </section>
+  </div>
+
+  </body>
+
+  </html>
