@@ -1,58 +1,67 @@
-  <!DOCTYPE html>
-  <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
 
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta http-equiv="X-UA-Compatible" content="ie-edge">
-  <title>Pruebas Vilma</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="X-UA-Compatible" content="ie-edge">
+<title>Pruebas Vilma</title>
 
 
-  <!--  Scripts-->
-  <script src="js/Scripts/jquery-2.1.1.min.js"></script>
-  <script src="js/Scripts/SweetAlert.min.js"></script>
-  <script src="js/Scripts/materialize.js"></script>
-  <script src="js/Scripts/init.js"></script>
-  <script src="js/SweetUser.js"></script>
-  <script src="js/Ajax.js"></script>
+<!--  Scripts-->
+<script src="js/Scripts/jquery-2.1.1.min.js"></script>
+<script src="js/Scripts/SweetAlert.min.js"></script>
+<script src="js/Scripts/materialize.js"></script>
+<script src="js/Scripts/init.js"></script>
+<script src="js/SweetUser.js"></script>
+<script src="js/Ajax.js"></script>
 
-  <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+<!-- CSS  -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 
-  <div id="circulo" class="container">
-    <section>
-      <div class="center blue-text">
-        <h1>Bienvenido!</h1>
-        <div class="preloader-wrapper big active">
-          <div class="spinner-layer spinner-blue-only">
-            <div class="circle-clipper left">
-              <div class="circle"></div>
-            </div>
-            <div class="gap-patch">
-              <div class="circle"></div>
-            </div>
-            <div class="circle-clipper right">
-              <div class="circle"></div>
-            </div>
+<div id="circulo" class="container">
+  <section>
+    <div class="center blue-text">
+      <h1>Bienvenido!</h1>
+      <div class="preloader-wrapper big active">
+        <div class="spinner-layer spinner-blue-only">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div>
+          <div class="gap-patch">
+            <div class="circle"></div>
+          </div>
+          <div class="circle-clipper right">
+            <div class="circle"></div>
           </div>
         </div>
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
+</div>
 
-  <div id="contenido" class="hide">
-    <section>
+<div id="contenido" class="hide">
+  <section>
 
-      <body>
-        <button type="button" class="btn" id="ejecutar" name="button">Click!</button>
-        <div class="row" id="botCamp">
+    <body>
+      <div class="center" id="dataPlay">
+        <div class="center" id="jugador">
 
         </div>
-    </section>
-  </div>
+        <label for="jugador" id="point"> Puntos: </label>
 
-  </body>
+        <progress id="barra" max="100">
+      </div>
 
-  </html>
+      <div class="row" id="botCamp">
+
+      </div>
+
+  </section>
+</div>
+
+</body>
+
+</html>

@@ -1,13 +1,21 @@
 window.addEventListener('load', () => {
-  setTimeout(loader, 2000);
-
-  function loader() {
-    document.getElementById("circulo").className = 'hide';
-    document.getElementById("contenido").className = 'container';
-    console.log("Entramos :D");
-    CargarPregunta();
-  }
+  setTimeout(jugador, 1000);
 });
+
+
+
+function loader(player) {
+  document.getElementById("circulo").className = 'hide';
+  document.getElementById("contenido").className = 'container';
+
+  console.log("Entramos :D \n" + player);
+
+  let jug = document.querySelector('#jugador');
+  jug.innerHTML = `
+  <h2>${player} </h2>
+  `
+  CargarPregunta();
+}
 
 let usados = new Array();
 let limite = true;
@@ -44,6 +52,9 @@ function CargarPregunta() {
       console.log("Vamos en: " + datos.length + " vs " + usados.length + " = " + limite);
 
       console.log(usados.toString() + " " + limite);
+      var barra = (usados.length - 1)  * 10;
+      document.getElementById("barra").value = barra;
+
     }
   }
 

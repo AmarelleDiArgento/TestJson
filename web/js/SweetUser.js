@@ -1,11 +1,25 @@
-function validar(valor, campo) {
-  //console.log("valor: " + valor + "campo: " + campo)
-  if (valor == campo) {
-    sweetOk();
-  } else {
-    sweetError();
-  }
+function jugador() {
+  swal({
+      title: "Bienvenido amigo",
+      text: "¿Cual es tu nombre?",
+      content: "input",
+      button: {
+        text: "A jugar!",
+        closeModal: false,
+      },
+    })
+    .then(result => {
+      console.log(result);
+      var name = "Jugador: ";
+      for (let n of result) {
+        name += n;
+      }
+      loader(name);
 
+      swal.stopLoading();
+      swal.close();
+
+    });
 }
 
 function sweerConf(valor, campo) {
@@ -23,17 +37,25 @@ function sweerConf(valor, campo) {
     });
 }
 
+function validar(valor, campo) {
+  //console.log("valor: " + valor + "campo: " + campo)
+  if (valor == campo) {
+    sweetOk();
+  } else {
+    sweetError();
+  }
+}
+
 function sweetOk() {
   swal({
       title: "Genial!",
       text: "Haces un gran trabajo",
       icon: "success",
       class: "swal-footer",
-      buttons: true,
-      dangerMode: true
+      button: "Seguimos?",
     })
-    .then((willDelete) => {
-      if (willDelete) {
+    .then((seguir) => {
+      if (seguir) {
         CargarPregunta();
       }
     });
@@ -45,6 +67,18 @@ function sweetError() {
     text: "Mas suerte para la proxima",
     icon: "error",
     class: "swal-footer",
-  });
+    buttons: false,
+    timer: 5000,
+    closeOnEsc: false,
+  })
+
+  setTimeout(recargar, 5000);
+
+  function recargar() {
+    location.reload(true);
+    document.getElementById("benv").value = "Bienvenido nuevamente";
+  }
+
+  ;
 
 }
