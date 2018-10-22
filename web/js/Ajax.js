@@ -12,7 +12,7 @@ function loader(player) {
 
   let jug = document.querySelector('#jugador');
   jug.innerHTML = `
-  <h2>${player} </h2>
+  <h5 class="orange-text" >${player} </h5>
   `
   CargarPregunta();
 }
@@ -38,12 +38,22 @@ function CargarPregunta() {
         let sel = getRandomArbitrary(0, datos.length)
         usados.push(sel);
         pre.innerHTML = `
-                    <h3><p id="pr" class="col s12 center">${datos[sel].Pregunta}</p></h3>
-                    <button type="button" class="col s6 m6 l3 blue darken-4 text-white btn waves-effect waves-light" id="rp1" name="button" onclick="sweerConf(1,${datos[sel].Correcta})">${datos[sel].Resp1}</button>
-                    <button type="button" class="col s6 m6 l3 blue darken-4 text-white btn waves-effect waves-light" id="rp2" name="button" onclick="sweerConf(2,${datos[sel].Correcta})">${datos[sel].Resp2}</button>
-                    <button type="button" class="col s6 m6 l3 blue darken-4 text-white btn waves-effect waves-light" id="rp3" name="button" onclick="sweerConf(3,${datos[sel].Correcta})">${datos[sel].Resp3}</button>
-                    <button type="button" class="col s6 m6 l3 blue darken-4 text-white btn waves-effect waves-light" id="rp4" name="button" onclick="sweerConf(4,${datos[sel].Correcta})">${datos[sel].Resp4}</button>
-                    `
+                <div class="row center">
+  <div class="col s12 m12 l12 campo ">
+    <p><h4>${datos[sel].Pregunta}</h4></p>
+  </div>
+
+                    <div class="col s12 m6 l6 campo margin1">
+                        <a class="btn waves-effect width-all" onclick="sweerConf(1,${datos[sel].Correcta})" >${datos[sel].Resp1}</a>
+                    </div>
+                    <div class="col s12 m6 l6 campo margin1">
+                        <a class="btn waves-effect width-all" onclick="sweerConf(2,${datos[sel].Correcta})" >${datos[sel].Resp2}</a>
+                    </div>      <div class="col s12 m6 l6 campo margin1">
+                        <a class="btn waves-effect width-all" onclick="sweerConf(3,${datos[sel].Correcta})" >${datos[sel].Resp3}</a>
+                    </div>      <div class="col s12 m6 l6 campo margin1">
+                        <a class="btn waves-effect width-all" onclick="sweerConf(4,${datos[sel].Correcta})" >${datos[sel].Resp4}</a>
+                    </div>
+  `
       } else {
 
         pre.innerHTML = "<H1>Caramba nos hemos quedado sin mas preguntas que hacerte, debes ser bastante bueno :D </H1>";
@@ -52,7 +62,7 @@ function CargarPregunta() {
       console.log("Vamos en: " + datos.length + " vs " + usados.length + " = " + limite);
 
       console.log(usados.toString() + " " + limite);
-      var barra = (usados.length - 1)  * 10;
+      var barra = (usados.length - 1) * 10;
       document.getElementById("barra").value = barra;
 
     }

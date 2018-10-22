@@ -5,60 +5,46 @@
  *
  * Made By MaterializeCSS.com
  */
-
-nav ul a,
-nav .brand-logo {
-  color: #444;
+body{
+    background-color: #000a4a;
+background-image: url("https://www.transparenttextures.com/patterns/black-thread-light.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
-
-p {
-  line-height: 2rem;
-}
-
-.sidenav-trigger {
-  color: #26a69a;
-}
-
-.parallax-container {
-  min-height: 380px;
-  line-height: 0;
-  height: auto;
-  color: rgba(255,255,255,.9);
-}
-  .parallax-container .section {
-    width: 100%;
-  }
-
-@media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
-  }
-  #index-banner .section {
-    top: 10%;
-  }
-}
-
-@media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 0;
-  }
-}
-
 .icon-block {
   padding: 0 15px;
 }
 .icon-block .material-icons {
-  font-size: inherit;
+	font-size: inherit;
 }
-
-footer.page-footer {
-  margin: 0;
+.img-background{
+	background-image: url("https://images.pexels.com/photos/1080865/pexels-photo-1080865.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+	background-size: 100%;
 }
-
-.swal-footer {
-  background-color: rgb(245, 248, 250);
-  margin-top: 32px;
-  border-top: 1px solid #E9EEF1;
-  overflow: hidden;
+.mod-buscar{
+	background: #0000005e;
+	color: white;
+}
+html{
+    height: 100%;
+}
+body{
+    height: 100% !important;
+    display: flex !important;
+    flex-direction:column !important;
+    justify-content: space-between !important;
+}
+.campo{
+    border-radius: 50px;
+    background: black;
+    color: white;
+    border: solid 1px;
+}
+.width-all{
+    width: 100%;
+}
+.btn{
+    background: none;
+}
+.margin1{
+    margin-top: 1%;
 }
