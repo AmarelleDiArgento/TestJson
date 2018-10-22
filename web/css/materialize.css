@@ -2591,7 +2591,7 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 }
 
 ul:not(.browser-default) {
@@ -4488,7 +4488,7 @@ a {
 
 html {
   line-height: 1.5;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
   font-weight: normal;
   color: rgba(0, 0, 0, 0.87);
 }
@@ -4529,7 +4529,7 @@ h1 {
 h2 {
   font-size: 3.56rem;
   line-height: 110%;
-  margin: 2.3733333333rem 0 1.424rem 0;
+  margin: 2rem 0 1rem 0;
 }
 
 h3 {
@@ -6125,6 +6125,7 @@ input[type=tel]:not(.browser-default),
 input[type=number]:not(.browser-default),
 input[type=search]:not(.browser-default),
 textarea.materialize-textarea {
+  text-align: center;
   background-color: transparent;
   border: none;
   border-bottom: 1px solid #9e9e9e;
@@ -8336,17 +8337,17 @@ input[type=range]::-ms-thumb {
   display: inline-block;
   position: relative;
   cursor: pointer;
-  height: 16px;
+  height: 6px;
   width: 16px;
   margin: 0 12px;
-  background-color: #e0e0e0;
+  background-color: #ffffff;
   -webkit-transition: background-color .3s;
   transition: background-color .3s;
-  border-radius: 50%;
+  border-radius: 20%;
 }
 
 .slider .indicators .indicator-item.active {
-  background-color: #4CAF50;
+  background-color: #4c56af;
 }
 
 .carousel {
